@@ -3,7 +3,7 @@ import os
 
 conn = sqlite3.connect('dia10.db')
 cursor = conn.cursor()
-
+# Criando tabelas
 def create_table():
     cursor.execute('''CREATE TABLE IF NOT EXISTS produtos (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
